@@ -33,6 +33,11 @@ app.use(passport.session());
 
 // Example protected and unprotected routes
 var room_url="";
+if(process.env.PROD){
+    app.get('*' , (req,res)=>{
+        res.render('./home.html');
+    })
+}
 app.get('/', (req, res) => {
 
     
