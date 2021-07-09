@@ -27,7 +27,7 @@
     "nodemon": "^2.0.3"
   },
   "scripts": {
-    "start": "PROD=true nodemon --watch \"src/\" --exec \"babel-node src/app.js\"",
+    "start": "PROD=true node --watch \"src/\" --exec \"babel-node src/app.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
