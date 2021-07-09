@@ -1,4 +1,5 @@
 let express = require( 'express' );
+require("dotenv").config();
 let html = require('html');
 const url = require('url');
 //const jsdom = require("jsdom");
@@ -88,5 +89,5 @@ app.get( '/good', ( req, res ) => {
 
 
 io.of( '/stream' ).on( 'connection', stream );
-
-server.listen( 5000 );
+const port = process.env.PORT||5000;
+server.listen( port );
