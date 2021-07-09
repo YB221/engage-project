@@ -1,0 +1,32 @@
+{
+  "name": "MS-test",
+  "version": "0.0.1",
+  "description": "teams-clone",
+  "main": "src/app.js",
+  "dependencies": {
+    "@types/passport-google-oauth20": "^2.0.8",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "firebase": "^8.7.0",
+    "html": "^1.0.0",
+    "jsdom": "^16.6.0",
+    "node-sessionstorage": "^1.0.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "serve-favicon": "^2.5.0",
+    "sessionstorage-for-nodejs": "^1.0.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "watch": "nodemon --watch \"src/\" --exec \"babel-node src/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
