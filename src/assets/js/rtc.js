@@ -311,51 +311,6 @@ window.addEventListener( 'load', () => {
         }
 
 
-        // function toggleRecordingIcons( isRecording ) {
-        //     let e = document.getElementById( 'record' );
-
-        //     if ( isRecording ) {
-        //         e.setAttribute( 'title', 'Stop recording' );
-        //         e.children[0].classList.add( 'text-danger' );
-        //         e.children[0].classList.remove( 'text-white' );
-        //     }
-
-        //     else {
-        //         e.setAttribute( 'title', 'Record' );
-        //         e.children[0].classList.add( 'text-white' );
-        //         e.children[0].classList.remove( 'text-danger' );
-        //     }
-        // }
-
-
-        // function startRecording( stream ) {
-        //     mediaRecorder = new MediaRecorder( stream, {
-        //         mimeType: 'video/webm;codecs=vp9'
-        //     } );
-
-        //     mediaRecorder.start( 1000 );
-        //     toggleRecordingIcons( true );
-
-        //     mediaRecorder.ondataavailable = function ( e ) {
-        //         recordedStream.push( e.data );
-        //     };
-
-        //     mediaRecorder.onstop = function () {
-        //         toggleRecordingIcons( false );
-
-        //         h.saveRecordedStream( recordedStream, username );
-
-        //         setTimeout( () => {
-        //             recordedStream = [];
-        //         },5000 );
-        //     };
-
-        //     mediaRecorder.onerror = function ( e ) {
-        //         console.error( e );
-        //     };
-        // }
-
-
         //Chat textarea
         document.getElementById( 'chat-input' ).addEventListener( 'keypress', ( e ) => {
             if ( e.which === 13 && ( e.target.value.trim() ) ) {
@@ -444,55 +399,5 @@ window.addEventListener( 'load', () => {
         } );
 
 
-        //When record button is clicked
-        // document.getElementById( 'record' ).addEventListener( 'click', ( e ) => {
-        //     /**
-        //      * Ask user what they want to record.
-        //      * Get the stream based on selection and start recording
-        //      */
-        //     if ( !mediaRecorder || mediaRecorder.state == 'inactive' ) {
-        //         h.toggleModal( 'recording-options-modal', true );
-        //     }
-
-        //     else if ( mediaRecorder.state == 'paused' ) {
-        //         mediaRecorder.resume();
-        //     }
-
-        //     else if ( mediaRecorder.state == 'recording' ) {
-        //         mediaRecorder.stop();
-        //     }
-        // } );
-
-
-        // //When user choose to record screen
-        // document.getElementById( 'record-screen' ).addEventListener( 'click', () => {
-        //     h.toggleModal( 'recording-options-modal', false );
-
-        //     if ( screen && screen.getVideoTracks().length ) {
-        //         startRecording( screen );
-        //     }
-
-        //     else {
-        //         h.shareScreen().then( ( screenStream ) => {
-        //             startRecording( screenStream );
-        //         } ).catch( () => { } );
-        //     }
-        // } );
-
-
-        // //When user choose to record own video
-        // document.getElementById( 'record-video' ).addEventListener( 'click', () => {
-        //     h.toggleModal( 'recording-options-modal', false );
-
-        //     if ( myStream && myStream.getTracks().length ) {
-        //         startRecording( myStream );
-        //     }
-
-        //     else {
-        //         h.getUserFullMedia().then( ( videoStream ) => {
-        //             startRecording( videoStream );
-        //         } ).catch( () => { } );
-        //     }
-        // } );
     }
 } );
