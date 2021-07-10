@@ -358,11 +358,11 @@ window.addEventListener( 'load', () => {
         document.getElementById( 'toggle-mute' ).addEventListener( 'click', ( e ) => {
             e.preventDefault();
 
-            let elem = document.getElementById( 'toggle-mute' );
-
+            let elem1 = document.getElementById( 'mic-on' );
+            let elem2 = document.getElementById('mic-off');
             if ( myStream.getAudioTracks()[0].enabled ) {
-                elem.children[0].style.display="block";
-                elem.children[1].style.display="none";
+                elem1.style.display="block";
+                elem2.style.display="none";
                 
                 elem.setAttribute( 'title', 'Unmute' );
 
@@ -370,8 +370,8 @@ window.addEventListener( 'load', () => {
             }
 
             else {
-                elem.children[1].style.display="block";
-                elem.children[0].style.display="none";
+                elem2.style.display="block";
+                elem1.style.display="none";
                 
                 elem.setAttribute( 'title', 'Mute' );
 
