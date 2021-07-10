@@ -163,7 +163,7 @@ export default {
 
         else {
             document.querySelector( '#new-chat-notification' ).removeAttribute( 'hidden' );
-            $("#boom").getAttribute('src').play()
+            document.getElementById("boom").play()
         }
     },
 
