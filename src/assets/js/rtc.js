@@ -357,7 +357,7 @@ window.addEventListener( 'load', () => {
         //When the mute icon is clicked
         document.getElementById( 'toggle-mute' ).addEventListener( 'click', ( e ) => {
             e.preventDefault();
-
+            let elem =  document.getElementById("toggle-mute");
             let elem1 = document.getElementById( 'mic-on' );
             let elem2 = document.getElementById('mic-off');
             if ( myStream.getAudioTracks()[0].enabled ) {
