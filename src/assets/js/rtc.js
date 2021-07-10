@@ -358,21 +358,17 @@ window.addEventListener( 'load', () => {
         document.getElementById( 'toggle-mute' ).addEventListener( 'click', ( e ) => {
             e.preventDefault();
             let elem =  document.getElementById("toggle-mute");
-            let elem1 = document.getElementById( 'mic-on' );
-            let elem2 = document.getElementById('mic-off');
+            let elem1 = document.getElementById( 'mic-icon' );
+            
             if ( myStream.getAudioTracks()[0].enabled ) {
-                elem1.style.display="block";
-                elem2.style.display="none";
-                
+                elem1.src="./assets/icons/microphone-off.png";
                 elem.setAttribute( 'title', 'Unmute' );
                 console.log("off");
                 myStream.getAudioTracks()[0].enabled = false;
             }
 
             else {
-                elem2.style.display="block";
-                elem1.style.display="none";
-                
+                elem1.src="./assets/icons/microphone.png";
                 elem.setAttribute( 'title', 'Mute' );
                 console.log("on");
                 myStream.getAudioTracks()[0].enabled = true;
