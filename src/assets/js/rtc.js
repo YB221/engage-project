@@ -365,7 +365,7 @@ window.addEventListener( 'load', () => {
                 elem2.style.display="none";
                 
                 elem.setAttribute( 'title', 'Unmute' );
-
+                console.log("off");
                 myStream.getAudioTracks()[0].enabled = false;
             }
 
@@ -374,7 +374,7 @@ window.addEventListener( 'load', () => {
                 elem1.style.display="none";
                 
                 elem.setAttribute( 'title', 'Mute' );
-
+                console.log("on");
                 myStream.getAudioTracks()[0].enabled = true;
             }
 
