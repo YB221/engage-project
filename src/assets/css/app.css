@@ -276,13 +276,13 @@
     border-radius: 10px;
 }
 
-h1 {
+#leave{
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
 }
 
-a {
+#a-tag{
     background-color: #001a29;
     border: 1px solid transparent;
     color: white;
@@ -295,7 +295,7 @@ a {
     font-size: 16px;
     
 }
-a:hover {
+#a-tag:hover {
     background-color: rgb(255, 255, 255);
     border-color: #001a29;
     color: #001a29;
