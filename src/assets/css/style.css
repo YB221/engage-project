@@ -11,11 +11,7 @@
     --z-fixed: 100
 }
 
-*,
-::before,
-::after {
-    box-sizing: border-box
-}
+
 
 body {
     position: relative;
