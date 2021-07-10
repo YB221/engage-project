@@ -163,8 +163,7 @@ export default {
 
         else {
             document.querySelector( '#new-chat-notification' ).removeAttribute( 'hidden' );
-            var audio = new Audio("../sounds/chat-noti.wav");
-            Audio.play();
+            $("#boom").getAttribute('src').play()
         }
     },
 
