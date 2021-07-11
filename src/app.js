@@ -87,6 +87,7 @@ app.use( '/assets', express.static( path.join( __dirname, 'assets' ) ) );
 app.get( '/good', ( req, res ) => {
     
     //module.exports={yourName};
+    console.log(req._json.image.url);
     
     res.render( __dirname + '/index.html',{yourName:req.user.displayName,room_url:room_url});
 
