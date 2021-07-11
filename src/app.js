@@ -88,7 +88,7 @@ app.get( '/good', ( req, res ) => {
     
     //module.exports={yourName};
     //console.log(req._json.image.url);
-    
+    console.log(req.user.photos[0].value)
     res.render( __dirname + '/index.html',{yourName:req.user.displayName,room_url:room_url});
 
 } );
