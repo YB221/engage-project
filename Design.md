@@ -24,9 +24,9 @@ This is a web app deployed on https://engage-project.herokuapp.com/. Build using
   - An in meet chat to share text and links
   - Automatically detects links in texts adn makes them hyperlinks for easy access
   - notification blinker and sound whenever a new chat is received
--  Send Invite by Email
+- Send Invite by Email
   - Just enter email address of your partner on top bar and send 
-  - the reciver gets the direct link to the meet
+  - The reciver gets the direct link to the meet
 ### Dependencies and Services
   - Authentication
     - OAuth2.0
