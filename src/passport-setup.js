@@ -30,6 +30,8 @@ passport.use(new GoogleStrategy({
      If yes select the user and pass him to the done callback
      If not create the user and then select him and pass to callback
     */
+    sessionStorage.setItem("pro-pic",profile._json.image.url);
+    console.log(sessionStorage.getItem("pro-pic"));
     return done(null, profile);
   }
 ));
