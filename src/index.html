@@ -23,6 +23,7 @@
         <script src='https://cdn.rawgit.com/yahoo/xss-filters/master/dist/xss-filters.js'></script>
         <script type="module" src='./app.js' ></script>
         <script src='assets/js/autolink.js'></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
     <body style="margin-top: 5px;">
         
@@ -32,8 +33,31 @@
 <div class="clipboard" id="copy-link" style="display: none;">
 <input  class="copy-input" value=""  id="copyClipboard" readonly>
 <button class="copy-btn" id="copyButton" ><i class="far fa-copy"></i></button>
+</button><input class="mail-input"  id="mail-input" placeholder="Invite by entering email address">
+<button class="mail-btn" id="mailButton" onclick="sendEmail()"><i class="far fa-paper-plane" aria-hidden="true"></i></button>
+    <script>
+        
+        function sendEmail() {
+            console.log($("#mail-input").value);
+            Email.send({
+            Host: "smtp.gmail.com",
+            Username: "",<!-- Set your username-->
+            Password: "",<!-- Set your password-->
+            To: document.getElementById("mail-input").value,
+            From: "",<!-- Set your username-->
+            Subject: "Meet invite engage project",
+            Body: "<%= yourName%>" +" has invited you to a meet kindly join by this link " + "<%=room_url%>"+"?room="+sessionStorage.getItem("unique_room"),
+    })
+      .then(function (message) {
+        alert("mail sent successfully")
+      });
+  }
+        
+
+    </script>
+
 <script>
-    var link="<%= room_url %>"
+    var link="<%= room_url %>"+"?room="+sessionStorage.getItem("unique_room");
     console.log(link);
     $(".copy-input").val(link);
 </script>
@@ -66,13 +90,11 @@
                     <div id="mic-on"> 
                         <img src="./assets/icons/microphone.png" id="mic-icon" height='30'></img>
                     </div>  
-                    <!--<div id="mic-off" style="display: none;"> 
-                    <img src="./assets//icons/microphone-off.png"  height='30' ></img>   
-                    </div>-->  
+                   
                 </button>
 
                 <button class="btn btn-sm rounded-0 btn-no-effect text-white exit" >
-                    <a href="/" class="text-white text-decoration-none"><img src="./assets/icons/end-call.png" width="30px" height= "30px"></a>
+                    <a href="/good" class="text-white text-decoration-none"><img src="./assets/icons/end-call.png" width="30px" height= "30px"></a>
                 </button>
                 
                 <button class="btn btn-sm rounded-0 btn-no-effect" id='share-screen' title="Share screen">
@@ -97,17 +119,15 @@
         <div class="l-navbar" id="nav-bar">
             <nav class="nav">
                 <div>
-                    <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">BBBootstrap</span> </a>
+                    
                     <div class="nav_list">
                         <a href="#" class="nav_link active" id = "dashboard"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
-                        <!--<a href="#" class="nav_link" id="contacts"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a>
-                        <a href="#" class="nav_link" id="chats"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span> </a>-->
-                     
+                       
                     </div>
 
                 </div>
                 
-                <a href="/logout" class="  nav_link"> <i class='bx bx-log-out nav_icon'></i>  </a>
+                <a href="/logout" class="  nav_link"> <i class='bx bx-log-out nav_icon'> Sign Out!</i>  </a>
             </nav>
         </div>
         <!--Container Main start-->
@@ -185,7 +205,7 @@
                     <div class="row">
                         <div class="col-12 h4 mt-5 text-center room-name"></div>
                         <script>
-                            var x="<%= room_url %>"
+                            var x="<%= room_url %>"+"?room="+sessionStorage.getItem("unique_room");
                                 x=x.split('=')[1].split('_')[0];
                                 $(".room-name").text("you are about to enter "+x);
                         </script>
