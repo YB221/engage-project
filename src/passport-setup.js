@@ -20,9 +20,10 @@ passport.deserializeUser(function(user, done) {
 });
 
 passport.use(new GoogleStrategy({
-    clientID: "445378763273-vv1m5328scur4cdah9q0oh5bdi367eh9.apps.googleusercontent.com",
-    clientSecret: "Mh50zW8Y4b72AYScfustlhTi",
-    callbackURL: "https://engage-project.herokuapp.com/google/callback"
+    //SET your oAuth credentials
+    clientID: "",
+    clientSecret: "",
+    callbackURL: ""
   },
   function(accessToken, refreshToken, profile, done) {
     /*
@@ -30,8 +31,8 @@ passport.use(new GoogleStrategy({
      If yes select the user and pass him to the done callback
      If not create the user and then select him and pass to callback
     */
-    sessionStorage.setItem("pro-pic",profile._json.image.url);
-    console.log(sessionStorage.getItem("pro-pic"));
+    //sessionStorage.setItem("pro-pic",profile._json.image.url);
+    //console.log(sessionStorage.getItem("pro-pic"));
     return done(null, profile);
   }
 ));
