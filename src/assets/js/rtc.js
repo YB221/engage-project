@@ -3,8 +3,26 @@ import h from './helpers.js';
 
 
 window.addEventListener( 'load', () => {
-    const room = h.getQString( sessionStorage.getItem('room_url'), 'room' );
+    var room=null;
+    if(sessionStorage.getItem("plag")===null)
+    {
 
+    
+        if(sessionStorage.getItem("unique_room")===null)
+        {
+            room = h.getQString( sessionStorage.getItem('room_url'), 'room' );
+            sessionStorage.setItem("unique_room", room);
+        
+        }
+        else
+        {
+            room = sessionStorage.getItem('unique_room');
+        }
+    }
+    else
+    {
+        sessionStorage.removeItem("plag");
+    }
     console.log(room);
     const username = sessionStorage.getItem( 'username' );
     console.log(username);
@@ -19,7 +37,8 @@ window.addEventListener( 'load', () => {
     }
 
     else {
-        let elem = document.getElementById( 'copy-link' );
+       
+            let elem = document.getElementById( 'copy-link' );
         elem.style.display="block";
 
         let commElem = document.getElementsByClassName( 'room-comm' );
@@ -35,8 +54,7 @@ window.addEventListener( 'load', () => {
         var socketId = '';
         var myStream = '';
         var screen = '';
-        //var recordedStream = [];
-        //var mediaRecorder = '';
+        
 
         //Get user video by default
         getAndSetUserStream();
@@ -207,7 +225,7 @@ window.addEventListener( 'load', () => {
                     //video controls elements
                     let controlDiv = document.createElement( 'div' );
                     controlDiv.className = 'remote-video-controls';
-                    controlDiv.innerHTML = `<i class="fa fa-microphone text-white pr-3 mute-remote-mic" title="Mute"></i>`;
+                    controlDiv.innerHTML = `<i class="fa fa-microphone text-white pr-3 mute-remote-mic" title="Mute"></i> <i class="fa fa-expand text-white expand-remote-video" title="Expand"></i>`;
 
                     //create a new div for card
                     let cardDiv = document.createElement( 'div' );
