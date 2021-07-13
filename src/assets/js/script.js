@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
     const showNavbar = (toggleId, navId, bodyId, headerId) =>{
@@ -47,9 +49,7 @@ $("#chats").click(()=>{
     $(".dash-board").hide()
     console.log("clicked");
 })
-$('.exit').click(()=>{
-    sessionStorage.removeItem('room_url')
-})
+
 
 
 
@@ -62,8 +62,3 @@ $('.copy-btn').click(() =>{
     $('#copied-success').fadeIn(800);
     $('#copied-success').fadeOut(800);
   })
-
-
-
-
-
