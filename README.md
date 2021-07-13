@@ -7,6 +7,8 @@ Checkout the full manual at https://github.com/YB221/engage-project/blob/main/De
 - add your mail credentials in index.js for email service
 
 # Getting Started
+-  `git clone https://github.com/YB221/engage-project`
+-  `cd engage-project`
 -  Run `npm i`
 - `npm start`
 
