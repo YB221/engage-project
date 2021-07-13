@@ -27,7 +27,7 @@ window.addEventListener( 'load', () => {
     const username = sessionStorage.getItem( 'username' );
     console.log(username);
 
-    if ( !room ) {
+    if ( !room||room=="null" ) {
         document.querySelector( '#room-create' ).attributes.removeNamedItem( 'hidden' );
     }
 
