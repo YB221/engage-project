@@ -24,21 +24,21 @@ A video call with chat implementation using WebRTC, Socket.io and Node.js. Deplo
 
 ##  Authentication and Homescreen
 
-<img height = 300 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2020-54-37.png/">
-<img height = 300 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2020-55-21.png"/>
-<img height = 300 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2020-55-31.png"/>
+<img height = 100 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2020-54-37.png/">
+<img height = 100 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2020-55-21.png"/>
+<img height = 100 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2020-55-31.png"/>
 
 ## Features
 
-<img height = 300 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-41-52.png"/>
-<img height = 300 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2022-13-52.png"/>
-<img height = 300 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-42-26.png"/>
+<img height = 100 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-41-52.png"/>
+<img height = 100 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2022-13-52.png"/>
+<img height = 100 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-42-26.png"/>
 
 # Meet and chat
-<img height = 300 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-42-55.png"/>
+<img height = 100 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-42-55.png"/>
 
-<img height = 300 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-43-27.png"/>
-<img height = 300 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-43-53.png"/>
+<img height = 100 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-43-27.png"/>
+<img height = 100 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-43-53.png"/>
 
 
 
