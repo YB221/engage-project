@@ -74,7 +74,10 @@ window.addEventListener( 'load', () => {
             //document.querySelector( '#room-created' ).innerHTML = `Room successfully created. Click <a href='${ roomLink }'>here</a> to enter room. 
             //    Share the room link with your partners.`;
             sessionStorage.setItem('room_url',roomLink);
-           location.replace(roomLink);
+            const room = helpers.getQString( sessionStorage.getItem('room_url'), 'room' );
+            sessionStorage.setItem("unique_room",room);
+            
+            location.reload();
             //empty the values
             
             document.querySelector( '#room-name' ).value = '';
@@ -141,7 +144,14 @@ window.addEventListener( 'load', () => {
     document.getElementById('logout-button').addEventListener('click', (e)=>{
         e.preventDefault();
         
-            sessionStorage.removeItem('room');
+            sessionStorage.removeItem('unique_room');
+            sessionStorage.removeItem('room_url');
             location.replace('/logout');
     });
 } );
+
+$(".exit").click(()=>{
+    sessionStorage.removeItem("unique_room");
+    sessionStorage.setItem("plag",true);
+    sessionStorage.setItem("room_url","  ");//enter your base page like localhost:PORT or https://engage-project.herokuapp.com/good here
+})
