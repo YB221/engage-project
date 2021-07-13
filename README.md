@@ -1,4 +1,4 @@
-# Conference Call
+# Engage Teams Project
 A video call with chat implementation using WebRTC, Socket.io and Node.js. Deployed at https://engage-project.herokuapp.com/ test it there for best results.
 ## Design and Documentation
 Checkout the full manual at https://github.com/YB221/engage-project/blob/main/Design.md
@@ -39,7 +39,6 @@ Checkout the full manual at https://github.com/YB221/engage-project/blob/main/De
 
 # Meet and chat
 <img height = 200 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-42-55.png"/>
-
 <img height = 200 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-43-27.png"/>
 <img height = 200 src="https://github.com/YB221/engage-project/blob/main/img/Screenshot%20from%202021-07-13%2021-43-53.png"/>
 
