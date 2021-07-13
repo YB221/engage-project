@@ -1,7 +1,7 @@
 # Design and Workflow
 
 ## Abstract
-This project was made as a part of MS-engage program 2021. The project aims to use WebRTC to provide a peer to peer chat and video conferencing service.
+This project was made as a part of MS-engage program 2021. The project aims to use WebRTC to provide a peer to peer chat and video conferencing service. it is deployed at https://engage-project.herokuapp.com/
 ## Scrum Sprints
 - Sprint 1
   - Adding Auth
