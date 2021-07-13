@@ -109,7 +109,7 @@ export default {
 
     getIceServer() {
         return {
-            iceServers: [{   urls: [ "stun:bn-turn1.xirsys.com" ]}, {   username: "iniN8Cfdk6FVC1R6d6KxGlp2Y7_nRK5boPt_w_gUznPM2y-wZzO_ETOYRrJaTb5YAAAAAGDkIjNob2xhaG9sYQ==",   credential: "7fefeaf2-de3c-11eb-88f7-0242ac140004",   urls: [       "turn:bn-turn1.xirsys.com:80?transport=udp",       "turn:bn-turn1.xirsys.com:3478?transport=udp",       "turn:bn-turn1.xirsys.com:80?transport=tcp",       "turn:bn-turn1.xirsys.com:3478?transport=tcp",       "turns:bn-turn1.xirsys.com:443?transport=tcp",       "turns:bn-turn1.xirsys.com:5349?transport=tcp"   ]}]
+            iceServers: [{   urls: [ "stun:bn-turn1.xirsys.com" ]}, {   username: "mIi7cPyf0JotaULdKqMRzVK10BDsCtzPsCx5jRsMvXdBaux9lujH7bXdqhB4IVwHAAAAAGDsbKN5YXNod2FyZGhhbmdhdXRhbQ==",   credential: "92869382-e32d-11eb-9b54-0242ac140004",   urls: [       "turn:bn-turn1.xirsys.com:80?transport=udp",       "turn:bn-turn1.xirsys.com:3478?transport=udp",       "turn:bn-turn1.xirsys.com:80?transport=tcp",       "turn:bn-turn1.xirsys.com:3478?transport=tcp",       "turns:bn-turn1.xirsys.com:443?transport=tcp",       "turns:bn-turn1.xirsys.com:5349?transport=tcp"   ]}]
         };
     },
 
@@ -253,7 +253,7 @@ export default {
         mirrorMode ? localVidElem.classList.add( 'mirror-mode' ) : localVidElem.classList.remove( 'mirror-mode' );
     },
 
-
+    
     adjustVideoElemSize() {
         let elem = document.getElementsByClassName( 'card' );
         let totalRemoteVideosDesktop = elem.length;
@@ -292,7 +292,7 @@ export default {
             let controlDiv = document.createElement( 'div' );
             controlDiv.className = 'remote-video-controls';
             controlDiv.innerHTML = `<i class="fa fa-microphone text-white pr-3 mute-remote-mic" title="Mute"></i>
-                <i class="fa fa-expand text-white expand-remote-video" title="Expand"></i>`;
+            <i class="fa fa-expand text-white expand-remote-video" title="Expand"></i>`;
 
             //create a new div for card
             let cardDiv = document.createElement( 'div' );
