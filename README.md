@@ -4,7 +4,7 @@ A video call with chat implementation using WebRTC, Socket.io and Node.js. Deplo
 Checkout the full manual at https://github.com/YB221/engage-project/blob/main/Design.md
 # Before you start
 - create a Google OAuth(many yt videos available) and update credentials and call back URL in src/passport-setup.js(line 23) and add base url of your app in events.js(line 156) for example "localhost:5000" or "https://engage-project.herokuapp.com/"
-- add your mail credentials in index.js for email service
+- add your mail credentials in index.js for email service on line number 44 (I used a shell email that I will dispose later I recommend you to do the same)
 
 # Getting Started
 -  `git clone https://github.com/YB221/engage-project`
